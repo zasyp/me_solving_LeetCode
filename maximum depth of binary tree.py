@@ -9,8 +9,8 @@ def maxDepth(root):
     if not root:
         return 0
 
-    stack = [(root, 0)]
-    max_depth = 0
+    stack = [(root, 1)]
+    max_depth = 1
 
     while stack:
         node, depth = stack.pop()
@@ -20,5 +20,5 @@ def maxDepth(root):
         if node.left:
             stack.append((node.left, depth + 1))
 
-    return max_depth + 1
+    return max_depth
 
