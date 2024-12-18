@@ -13,3 +13,4 @@ def isPalindrome(s: str):
         return False
 
 print(isPalindrome("A man, a plan, a canal: Panama"))
+print(isPalindrome("0P"))
